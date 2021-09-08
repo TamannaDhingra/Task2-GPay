@@ -1,0 +1,2 @@
+rootProject.name = "Task-2(GPay)"
+include ':app'

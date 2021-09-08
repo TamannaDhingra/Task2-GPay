@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/gpay"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+
+    <EditText
+
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="90sp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Name"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/upiId1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+
+        android:background="@drawable/edittextbackground"
+        android:hint="UPI ID"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/amount"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Amount"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/amount"
+        tools:layout_editor_absoluteX="20dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbackground"
+        android:backgroundTint="@color/white"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/gpaybtn"
+        android:text="PAY"
+        android:textColor="@color/color2"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
